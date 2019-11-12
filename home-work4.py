@@ -87,4 +87,41 @@ while i <= lenght:
 
 print("Cuvintul " + text + " " + is_palindrom + "este palindrom!")
 
+print("------------------------------------------------------------------------------\n")
+
+print("##############################################################################")
+print("################################ Exercitiul 4 ################################")
+print("##############################################################################")
 print("------------------------------------------------------------------------------")
+print("Scrieti un program care sa afiseze toti divizorii unui numar intreg\n")
+a = 150
+b = []
+range_element = a + 1
+for i in range(1, range_element):
+    if (a % i != 0):
+        continue
+
+    b.append(i)
+
+if ((len(b) - 1) <= 0):
+    print("Numarul introdus nu poate fi impartit!")
+else:
+    b_last_element = b.pop(-1)
+    b = ', '.join(str(x) for x in b)
+    print("Numarul " + str(a) + " poate fi devizat prin numerele: " + b + ' si ' + str(b_last_element))
+
+print("------------------------------------------------------------------------------\n")
+
+print("##############################################################################")
+print("################################ Exercitiul 5 ################################")
+print("##############################################################################")
+print("------------------------------------------------------------------------------")
+print("Calculati suma tuturor numerelor intre 1000 si 2300 care se impart fara rest")
+print("la 5 si 7.\n")
+sum = 0
+for i in range(1000, 2301, 1):
+    if (i % 5 == 0) and (i % 7 == 0):
+        sum += i
+
+print("Suma tuturor numerelor intre 1000 si 2300 este: " + str(sum))
+print("------------------------------------------------------------------------------\n")
