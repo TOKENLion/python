@@ -77,6 +77,8 @@ is_palindrom = ""
 while i <= lenght:
     if (text[i] != text[lenght - i]):
         is_palindrom = "nu "
+        break
+
     i += 1
 # is_palindrom = ""
 # reversed_string = text[::-1]
