@@ -78,6 +78,10 @@ while i <= lenght:
     if (text[i] != text[lenght - i]):
         is_palindrom = "nu "
     i += 1
+# is_palindrom = ""
+# reversed_string = text[::-1]
+# if (text != reversed_string):
+#     is_palindrom = "nu "
 
 print("Cuvintul " + text + " " + is_palindrom + "este palindrom!")
 
